@@ -34,6 +34,7 @@ x=np.linspace(5,15,11)
 param, _ = curve_fit(gaussiana,  x,xPMF)
 print("Parámetros de la curva de mejor ajuste = ",param)
 ~~~
+![mejorajuste](mejorajuste.png)
 Parte1
 Vector yPMF
 [0.03698 0.03364 0.03105 0.03481 0.03546 0.0395  0.04947 0.04839 0.06363
@@ -179,3 +180,5 @@ ax.set_zlabel('f(X,Y)')
 ax.set_title('Funcion de Distribucion Conjunta')
 plt.show()
 ~~~
+![PMF](PMF.png)
+![Distconjunta](Distconjunta.png)
