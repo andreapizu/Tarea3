@@ -34,6 +34,16 @@ x=np.linspace(5,15,11)
 param, _ = curve_fit(gaussiana,  x,xPMF)
 print("Parámetros de la curva de mejor ajuste = ",param)
 ~~~
+Parte1
+Vector yPMF
+[0.03698 0.03364 0.03105 0.03481 0.03546 0.0395  0.04947 0.04839 0.06363
+ 0.08419 0.07856 0.08193 0.06626 0.05344 0.0444  0.03981 0.03691 0.0343
+ 0.04137 0.02939 0.03657]
+Vector xPMF
+[0.06714 0.07172 0.08327 0.0923  0.12226 0.14149 0.12172 0.09834 0.07686
+ 0.05977 0.06519]
+Se observa que la mejor curva de ajuste, hace referencia a una Distribución Gaussiana
+Parámetros de la curva de mejor ajuste =  [9.90484381 3.29944287]
 
 #### Parte 2.
 2. Asumir independencia de X y Y Analíticamente, ¿cuál es entonces la expresión de la función de densidad conjunta que modela los datos?
@@ -88,6 +98,21 @@ coefcorre=np.sum(xyp['resultado3'] , axis=0)
 #imprimir el resultado
 print('El coeficiente de correlación es =', coefcorre)
 ~~~
+Parte3
+La correlación es= 149.54281
+
+Media de x = 10.0
+
+Media de y = 15.0
+
+La covarianza es =  0.06481000000000009
+
+El coeficiente de correlación es = 0.0033845918647466364
+
+Coeficiente de correlación: Es una medida que permite conocer el grado de asociación lineal entre dos variables cuantitativas(X y X)
+Covarianza:Corresponde al valor que indica el grado de variación conjunta de dos variables, en este caso X y , respecto a sus medias Dando como resultado 0.0648 aproximadamente
+Correlación: Indica que tan relacionadas o no están dos variables(si los cambios en una variable influyen en la otra), podemos observar que la relación en este caso es considerable.
+
 
 #### Parte 4
 ~~~python
@@ -109,7 +134,14 @@ plt.ylabel("Y axis")
 plt.xlabel("X axis")
 plt.show
 ~~~
+Parte4
 
+Funciones de densidad marginales  2D
+Gráfica función de densidad conjunta (3D)
+
+Parámetros de ajusteX =  [9.90484381 3.29944287]
+
+Parámetros de ajusteY= [15.0794609   6.02693776]
 ### Parte 5
 ~~~python
 print("Gráfica función de densidad conjunta (3D)")
